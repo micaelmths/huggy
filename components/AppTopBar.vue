@@ -34,7 +34,6 @@ export default {
   },
   computed: {
     isIndex() {
-      console.log(this.$route.name)
       if(this.$route.name === 'index') {
 
         return true

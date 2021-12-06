@@ -39,7 +39,6 @@ export const actions = {
     commit('SET_MOVIES_TOP_RATED', response.results)
   },
   async getRecommendations({_},payload) {
-    console.log('payload', payload)
     const {results} = await this.$axios.$get(`https://api.themoviedb.org/3/movie/${payload.id}/recommendations?api_key=${process.env.TMDB_KEY}&language=pt-BR`)
     return results
   }

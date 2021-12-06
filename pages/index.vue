@@ -119,7 +119,6 @@ export default {
       this.resultSearch = results
     },
     disableSearch() {
-      console.log('asbgvasçj')
       this.isSearch = false
     }
   },
