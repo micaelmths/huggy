@@ -69,6 +69,12 @@ export default Vue.extend({
       recommendations: []
     }
   },
+  head() {
+    return {
+      title: this.title
+
+    }
+  },
   computed: {
     realeseDate() {
       return moment(this.release_date).format('YYYY')
