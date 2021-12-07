@@ -19,6 +19,11 @@
         placeholder="Buscar"
         v-model="searchTerm"
       />
+      <button @click.prevent="handleLogout" class="btn btn-danger ml-3 col-1">
+        
+          <font-awesome-icon style="font-size: 24px" :icon="['fas', 'sign-out-alt']"/>
+        
+      </button>
     </div>
     <button v-else  @click.prevent="$router.push('/')" class="btn btn-primary">Voltar</button>
   </div>
@@ -76,6 +81,9 @@ button {
   height: 40px;
 }
 .input-group {
-  width: 300px;
+  width: 600px;
+}
+.form-control {
+  height: 42px;
 }
 </style>
